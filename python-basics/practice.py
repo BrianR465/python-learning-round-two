@@ -35,6 +35,22 @@ def lucky():
     print(s)
     print(s[3:8])
 
+# https://pythonbasics.org/string-find/
+def findCapSensitivity():
+    s = "That I ever did see. Dusty as the handle on the door"
+
+    index = s.find("Dusty")
+    print(index)
+    index = s.find("dusty")
+    print(index)
+
+def whatIfTwice():
+    s = "Hi. Dusty like I ever did see. Dusty as the handle on the door"
+    
+    index = s.find("Dusty")
+    print(index)
+
+
 def main():
     # name()
     # annoyingSong()
@@ -43,7 +59,9 @@ def main():
     # addTwoNums(30, 100)
     # actorName()
     # lucky()
-
+    # findCapSensitivity() #indeed case sensitive; returns -1 on not found 
+    # whatIfTwice() # Only returns the index of the first instance
+    
     print("End of main func")
 
 main()
